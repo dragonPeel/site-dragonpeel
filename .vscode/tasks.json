@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "🚀 DEPLOY SITE",
+      "type": "shell",
+      "command": "aws s3 sync . s3://dragonpeel.com --delete --exclude \".git/*\" --exclude \".vscode/*\" --exclude \"*.DS_Store\"",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
