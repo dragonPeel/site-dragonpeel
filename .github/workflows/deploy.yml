@@ -27,4 +27,4 @@ jobs:
             --exclude ".git/*" \
             --exclude ".github/*" \
             --exclude ".vscode/*" \
-            --exclude "*.DS_Store"
+            --exclude "*.DS_Store"~~
