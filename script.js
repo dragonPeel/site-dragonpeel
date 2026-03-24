@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   console.log("script loaded");
 
-  const fallbackImage = "Images/fallback/dragonTrans_fallback.png";
+  const fallbackImage = "fallback/dragonTrans_fallback.png";
   const fallbackColor = "#f97316";
 
   fetch('dragonSwap.json')
