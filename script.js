@@ -2,10 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   console.log("script loaded");
 
-  const fallbackImage = "fallback/dragonTrans_fallback.png";
+  const fallbackImage = "./fallback/dragon_fallback_trans.webp";
   const fallbackColor = "#f97316";
 
-  fetch('dragonSwap.json')
+  fetch('./dragonConfig.json')
     .then(res => res.json())
     .then(data => {
 
@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const dragons = data.dragons;
 
-      // 🛑 JSON empty or invalid
       if (!dragons || dragons.length === 0) {
         console.log("No dragons found");
         setFallback();
@@ -28,13 +27,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const dragon = dragons[Math.floor(Math.random() * dragons.length)];
 
-      const fullPath = "Images/detail_dragon/" + dragon.file;
+      // 🔥 NEW: build filename
+      const file = `dragon_${dragon.colorKey}_${dragon.variant}.webp`;
+      const fullPath = "./images/detail-dragon/" + file;
+
       imgEl.src = fullPath + "?v=" + Date.now();
 
-      console.log("Selected dragon:", dragon.file);
+      console.log("Selected dragon:", file);
       console.log("Using color:", dragon.color);
 
-      // 🎨 apply color (with safety)
       if (dragon.color) {
         document.documentElement.style.setProperty("--dragon-color", dragon.color);
       } else {
@@ -42,7 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.documentElement.style.setProperty("--dragon-color", fallbackColor);
       }
 
-      // ❌ image fails to load
       imgEl.onerror = () => {
         console.log("Image failed to load");
         setFallback();

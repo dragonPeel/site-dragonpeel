@@ -1,0 +1,86 @@
+{
+  "config": {
+    "segment": "#e07a1a"
+  },
+
+  "gradientRules": {
+    "default": {
+      "shadowBrightness": 5,
+      "highlightBrightness": 95,
+      "highlightSaturation": 5
+    },
+    "metal": {
+      "shadowBrightness": 3,
+      "highlightBrightness": 90,
+      "highlightSaturation": 3
+    }
+  },
+
+  "dragons": [
+    {
+      "colorKey": "orange-amber",
+      "variant": "trans",
+      "color": "#a87e00",
+      "style": "default",
+      "colorName": "Amber Ale Orange",
+      "dragonName": "Amber Dragon",
+      "rarity": 1,
+      "weight": 5,
+      "number": 1,
+      "created": "2026-03-25",
+      "active": true
+    },
+    {
+      "colorKey": "blue-mountain",
+      "variant": "trans",
+      "color": "#2f6fd6",
+      "style": "default",
+      "colorName": "Mountain Bluebird",
+      "dragonName": "Mountain Dragon",
+      "rarity": 1,
+      "weight": 5,
+      "number": 2,
+      "created": "2026-03-25",
+      "active": true
+    },
+    {
+      "colorKey": "green-emerald",
+      "variant": "trans",
+      "color": "#009473",
+      "style": "default",
+      "colorName": "Emerald Green",
+      "dragonName": "Emerald Dragon",
+      "rarity": 1,
+      "weight": 5,
+      "number": 3,
+      "created": "2026-03-25",
+      "active": true
+    },
+    {
+      "colorKey": "orchid",
+      "variant": "trans",
+      "color": "#b163a3",
+      "style": "default",
+      "colorName": "Orchid",
+      "dragonName": "Orchid Dragon",
+      "rarity": 1,
+      "weight": 5,
+      "number": 4,
+      "created": "2026-03-25",
+      "active": true
+    },
+    {
+      "colorKey": "grey-steel",
+      "variant": "trans",
+      "color": "#6b7280",
+      "style": "default",
+      "colorName": "Steel Grey",
+      "dragonName": "Steel Dragon",
+      "rarity": 1,
+      "weight": 5,
+      "number": 5,
+      "created": "2026-03-25",
+      "active": true
+    }
+  ]
+}

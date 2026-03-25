@@ -78,11 +78,13 @@ body {
   color: var(--dragon-color);
 }
 
+/* 🔥 UPDATED DRAGON STYLE */
 #randomImage {
   display: block;
-  margin: 30px auto;
-  width: min(90%, 650px);
+  margin: 40px auto 0;
+  width: min(90%, 700px);
   height: auto;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.4));
 }
 
 .dark-section {
