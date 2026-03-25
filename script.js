@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(data => {
 
       const segmentColor = data.config?.segment || "#e07a1a";
-      document.documentElement.style.setProperty("--segment-color", segmentColor);
+      document.documentElement.style.setProperty("--dragon-segment", segmentColor);
 
       const imgEl = document.getElementById("randomImage");
 
