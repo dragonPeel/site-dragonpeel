@@ -31,7 +31,12 @@ document.addEventListener("DOMContentLoaded", () => {
       const file = `dragon_${dragon.colorKey}_${dragon.variant}.webp`;
       const fullPath = "./images/detail-dragon/" + file;
 
-      imgEl.src = fullPath + "?v=" + Date.now();
+      const preload = new Image();
+      preload.src = fullPath + "?v=" + Date.now();
+
+      preload.onload = () => {
+        imgEl.src = preload.src;
+      };
 
       console.log("Selected dragon:", file);
       console.log("Using color:", dragon.color);

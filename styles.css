@@ -14,13 +14,17 @@ body {
 }
 
 .hero {
-  color: #fff;
+  position: relative;
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   padding: 40px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .hero h1 {
@@ -34,6 +38,10 @@ body {
   max-width: 640px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.logo {
+  margin-bottom: 20px;
 }
 
 .btn {
