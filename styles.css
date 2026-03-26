@@ -49,13 +49,7 @@ html {
 @media (max-width: 768px) {
   .hero {
     min-height: auto;
-    padding: 60px 20px 40px;
-  }
-}
-
-@media (max-width: 768px) {
-  #randomImage {
-    width: min(90%, 420px);
+    padding: 110px 20px 90px;
   }
 }
 
