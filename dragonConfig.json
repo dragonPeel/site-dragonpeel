@@ -107,6 +107,19 @@
       "number": 7,
       "created": "2026-03-27",
       "active": true
+    },
+    {
+      "colorKey": "brown-copper",
+      "variant": "trans",
+      "color": "#8c583b",
+      "style": "default",
+      "colorName": "Copper Brown",
+      "dragonName": "Copper Dragon",
+      "rarity": 1,
+      "weight": 5,
+      "number": 8,
+      "created": "2026-03-27",
+      "active": true
     }
   ]
 }
